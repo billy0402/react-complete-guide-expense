@@ -1,5 +1,5 @@
-import Expenses from '../components/Expenses';
-import { expenses } from '../fixtures/expenses';
+import Expenses from '@components/expense/Expenses';
+import { expenses } from '@fixtures/expenses';
 
 const App = () => {
   return (

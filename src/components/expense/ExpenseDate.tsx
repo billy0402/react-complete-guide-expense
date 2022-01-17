@@ -1,4 +1,4 @@
-import { Expense } from '../models/expense';
+import { Expense } from '@models/expense';
 
 type ExpenseDateProps = Pick<Expense, 'date'>;
 
