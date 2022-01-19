@@ -1,4 +1,4 @@
-# [react-complete-guide](https://github.com/academind/react-complete-guide-code)
+# [react-complete-guide-expense](https://github.com/academind/react-complete-guide-code/tree/05-rendering-lists-conditional-content)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
