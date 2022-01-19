@@ -44,7 +44,7 @@ const ExpenseForm = ({ onSaveExpense, onCancel }: ExpenseFormProps) => {
 
     const expense = {
       title,
-      amount: Number(amount),
+      amount: +amount,
       date: new Date(date),
     };
     onSaveExpense(expense);
