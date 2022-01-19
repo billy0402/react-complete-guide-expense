@@ -4,9 +4,10 @@ import { Expense } from '@models/expense';
 
 type ExpenseFormProps = {
   onSaveExpense: (expense: Omit<Expense, 'id'>) => void;
+  onCancel: () => void;
 };
 
-const ExpenseForm = ({ onSaveExpense }: ExpenseFormProps) => {
+const ExpenseForm = ({ onSaveExpense, onCancel }: ExpenseFormProps) => {
   const [title, setTitle] = useState('');
   const [amount, setAmount] = useState('');
   const [date, setDate] = useState('');
@@ -82,6 +83,9 @@ const ExpenseForm = ({ onSaveExpense }: ExpenseFormProps) => {
         </div>
       </div>
       <div className='new-expense__actions'>
+        <button type='button' onClick={onCancel}>
+          Cancel
+        </button>
         <button type='submit'>Add Expense</button>
       </div>
     </form>
